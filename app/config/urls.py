@@ -8,6 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('posts/', include('posts.urls')),
+    path('user/', include('user.urls')),
 ]
 
 urlpatterns += static(
