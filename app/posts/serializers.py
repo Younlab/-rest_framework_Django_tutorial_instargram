@@ -12,3 +12,9 @@ class PostSerializer(serializers.ModelSerializer):
             'image',
             'created_at',
         )
+class PostDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Post
+        fields = (
+            'content',
+        )
